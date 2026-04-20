@@ -1,0 +1,26 @@
+# Dependências
+node_modules/
+jspm_packages/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Variáveis de ambiente (Segurança!)
+.env
+.env.test
+.env.production
+.env.local
+
+# Cache e builds
+.npm
+.eslintcache
+dist/
+build/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
