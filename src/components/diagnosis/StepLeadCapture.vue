@@ -18,13 +18,13 @@ function onWhatsappInput(value: string) {
         v-model="store.lead.name"
         label="Nome"
         placeholder="Seu nome"
-        hint="Para personalizar o diagnostico e facilitar o retorno comercial."
+        hint="Para personalizar o diagnóstico e facilitar o retorno comercial."
       />
       <BaseInput
         :model-value="store.lead.whatsapp"
         label="WhatsApp"
         placeholder="(11) 99999-9999"
-        hint="Canal mais rapido para continuar a conversa se fizer sentido."
+        hint="Canal mais rápido para continuar a conversa, se fizer sentido."
         @update:model-value="onWhatsappInput"
       />
       <BaseInput
@@ -32,7 +32,7 @@ function onWhatsappInput(value: string) {
         type="email"
         label="E-mail"
         placeholder="voce@empresa.com"
-        hint="Usado para salvar seu resultado e compartilhar a analise depois."
+        hint="Usado para salvar seu resultado e compartilhar a análise depois."
       />
       <BaseInput
         v-model="store.lead.company"

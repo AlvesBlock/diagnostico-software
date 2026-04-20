@@ -90,7 +90,7 @@ export const useDiagnosisStore = defineStore('diagnosis', () => {
         tracking,
       });
     } catch (error) {
-      errorMessage.value = error instanceof Error ? error.message : 'Erro ao salvar diagnostico.';
+      errorMessage.value = error instanceof Error ? error.message : 'Erro ao salvar diagnóstico.';
       throw error;
     } finally {
       submitting.value = false;

@@ -18,7 +18,7 @@ const previewResult = computed(() => {
 
 const previewPrice = computed(() => {
   if (!previewResult.value) {
-    return 'Faixa liberada no proximo passo';
+    return 'Faixa liberada no próximo passo';
   }
 
   return `${formatCurrency(previewResult.value.estimatedPriceMin)} - ${formatCurrency(previewResult.value.estimatedPriceMax)}`;
@@ -30,17 +30,17 @@ const benefitItems = computed(() => {
   if (!previewResult.value) {
     return [
       'Faixa completa de investimento',
-      'Prazo estimado de execucao',
-      'Recomendacao de abordagem',
-      'Proximos passos sugeridos',
+      'Prazo estimado de execução',
+      'Recomendação de abordagem',
+      'Próximos passos sugeridos',
     ];
   }
 
   return [
     `Faixa completa de investimento: ${previewPrice.value}`,
     `Prazo estimado: ${previewResult.value.estimatedTimeMinDays} a ${previewResult.value.estimatedTimeMaxDays} dias`,
-    `Recomendacao: ${previewResult.value.recommendedApproach}`,
-    'Proximos passos para tirar o projeto do papel sem excesso inicial',
+    `Recomendação: ${previewResult.value.recommendedApproach}`,
+    'Próximos passos para tirar o projeto do papel sem excesso inicial',
   ];
 });
 </script>
@@ -51,26 +51,26 @@ const benefitItems = computed(() => {
       <SummaryCard
         title="Categoria principal"
         :value="getPainCategoryLabel(store.answers.painCategory)"
-        detail="A leitura parte da dor que hoje mais impacta a operacao."
+        detail="A leitura parte da dor que hoje mais impacta a operação."
       />
       <SummaryCard
         title="Complexidade prevista"
         :value="previewComplexity"
-        detail="Uma primeira leitura tecnica do porte da solucao."
+        detail="Uma primeira leitura técnica do porte da solução."
       />
       <SummaryCard
         title="Faixa inicial"
         :value="previewPrice"
-        detail="O valor final exibido abaixo considera escopo, urgencia e nivel de esforco."
+        detail="O valor final exibido abaixo considera escopo, urgência e nível de esforço."
       />
     </div>
 
     <div class="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
       <div class="rounded-[30px] border border-black/8 bg-ink p-7 text-white shadow-soft">
-        <p class="text-xs font-bold uppercase tracking-[0.18em] text-white/55">Seu diagnostico esta pronto</p>
-        <h2 class="mt-4 text-3xl font-bold leading-tight">Falta so um passo para liberar sua analise completa</h2>
+        <p class="text-xs font-bold uppercase tracking-[0.18em] text-white/55">Seu diagnóstico está pronto</p>
+        <h2 class="mt-4 text-3xl font-bold leading-tight">Falta só um passo para liberar sua análise completa</h2>
         <p class="mt-4 text-sm leading-7 text-white/75">
-          Preencha seus dados para ver a faixa completa, prazo sugerido, recomendacao de abordagem e os proximos passos para iniciar com clareza.
+          Preencha seus dados para ver a faixa completa, o prazo sugerido, a recomendação de abordagem e os próximos passos para começar com clareza.
         </p>
 
         <div class="mt-6 space-y-3">
@@ -87,9 +87,9 @@ const benefitItems = computed(() => {
 
       <div class="rounded-[30px] border border-black/8 bg-white p-6 shadow-soft sm:p-7">
         <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700/80">Liberar resultado</p>
-        <h3 class="mt-3 text-2xl font-bold">Preencha para ver seu diagnostico completo</h3>
+        <h3 class="mt-3 text-2xl font-bold">Preencha para ver seu diagnóstico completo</h3>
         <p class="mt-3 text-sm leading-6 text-black/60">
-          Seus dados tambem permitem continuar a conversa caso faca sentido avancar com um MVP ou uma implantacao por fases.
+          Seus dados também permitem continuar a conversa caso faça sentido avançar com um MVP ou uma implantação por fases.
         </p>
         <div class="mt-6">
           <slot />

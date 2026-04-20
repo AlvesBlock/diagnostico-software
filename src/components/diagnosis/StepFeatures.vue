@@ -8,7 +8,7 @@ const store = useDiagnosisStore();
 <template>
   <div class="space-y-4">
     <p class="text-sm leading-6 text-black/58">
-      Pense no que precisa existir para a primeira versao gerar valor de negocio. O restante pode virar evolucao futura.
+      Pense no que precisa existir para a primeira versão gerar valor de negócio. O restante pode virar evolução futura.
     </p>
     <FeatureToggleGrid :model-value="store.answers.features" @toggle="store.toggleFeature" />
   </div>

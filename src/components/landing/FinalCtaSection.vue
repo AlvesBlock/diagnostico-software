@@ -11,11 +11,11 @@ import BaseSection from '@/components/common/BaseSection.vue';
           <p class="text-xs font-bold uppercase tracking-[0.18em] text-white/55">Pronto para entender o tamanho do gargalo</p>
           <h2 class="text-3xl font-bold leading-tight">Antes de pedir proposta, descubra a melhor forma de atacar o problema.</h2>
           <p class="text-sm leading-7 text-white/75">
-            Em poucos minutos, voce sai com uma leitura inicial de investimento, prazo e abordagem para comecar com mais clareza.
+            Em poucos minutos, você sai com uma leitura inicial de investimento, prazo e abordagem para começar com mais clareza.
           </p>
         </div>
         <RouterLink to="/diagnostico">
-          <BaseButton variant="secondary">Iniciar diagnostico</BaseButton>
+          <BaseButton variant="secondary">Iniciar diagnóstico</BaseButton>
         </RouterLink>
       </div>
     </div>

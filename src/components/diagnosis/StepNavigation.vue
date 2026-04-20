@@ -30,7 +30,7 @@ const emit = defineEmits<{
       :disabled="!canGoNext || submitting"
       @click="emit('submit')"
     >
-      {{ submitting ? 'Liberando...' : 'Ver meu diagnostico completo' }}
+      {{ submitting ? 'Liberando...' : 'Ver meu diagnóstico completo' }}
     </BaseButton>
   </div>
 </template>

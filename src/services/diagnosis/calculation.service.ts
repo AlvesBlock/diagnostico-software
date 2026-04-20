@@ -21,23 +21,23 @@ function buildHighlights(answers: DiagnosisAnswers, complexityLevel: ComplexityL
   const highlights: string[] = [];
 
   if (answers.features.integrations) {
-    highlights.push('Integracoes externas elevam o cuidado com mapeamento e dependencias de terceiros.');
+    highlights.push('Integrações externas elevam o cuidado com mapeamento e dependências de terceiros.');
   }
 
   if (answers.features.mobile_app) {
-    highlights.push('App mobile aumenta escopo de experiencia, testes e distribuicao.');
+    highlights.push('App mobile amplia o escopo de experiência, testes e distribuição.');
   }
 
   if (answers.impacts.includes('lost_sales')) {
-    highlights.push('Ha um impacto direto potencial em receita, o que aumenta prioridade estrategica.');
+    highlights.push('Há um impacto direto potencial em receita, o que aumenta a prioridade estratégica.');
   }
 
   if (complexityLevel === 'complexa' || complexityLevel === 'avancada') {
-    highlights.push('O escopo sugere evolucao em fases para reduzir risco e acelerar entregas de valor.');
+    highlights.push('O escopo sugere evolução em fases para reduzir risco e acelerar entregas de valor.');
   }
 
   if (highlights.length === 0) {
-    highlights.push('O cenario indica boa oportunidade para comecar com um MVP enxuto e validar ganhos rapidamente.');
+    highlights.push('O cenário indica uma boa oportunidade para começar com um MVP enxuto e validar ganhos rapidamente.');
   }
 
   return highlights;

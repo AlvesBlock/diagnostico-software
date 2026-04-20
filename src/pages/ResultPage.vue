@@ -24,14 +24,14 @@ if (!result.value) {
 
 const whatsappUrl = computed(() =>
   useWhatsappLink(
-    `Ola! Conclui meu diagnostico e quero conversar sobre a recomendacao para um projeto ${result.value?.complexityLevel ?? ''}.`,
+    `Olá! Concluí meu diagnóstico e quero conversar sobre a recomendação para um projeto ${result.value?.complexityLevel ?? ''}.`,
   ),
 );
 
 const nextSteps = [
-  'Priorizar o modulo mais ligado ao gargalo principal para reduzir tempo ate a primeira entrega.',
-  'Validar dependencias externas e integracoes antes de expandir escopo.',
-  'Definir uma primeira fase com entregas mensuraveis para comprovar ganho operacional.',
+  'Priorizar o módulo mais ligado ao gargalo principal para reduzir o tempo até a primeira entrega.',
+  'Validar dependências externas e integrações antes de expandir o escopo.',
+  'Definir uma primeira fase com entregas mensuráveis para comprovar o ganho operacional.',
 ];
 </script>
 
@@ -44,10 +44,10 @@ const nextSteps = [
       <div class="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
         <BaseCard>
           <div class="space-y-4">
-            <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700/80">Recomendacao consultiva</p>
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700/80">Recomendação consultiva</p>
             <h2 class="text-2xl font-bold">{{ result.recommendedApproach }}</h2>
             <p class="text-sm leading-7 text-black/65">
-              Essa recomendacao considera escopo declarado, urgencia e risco de implementacao para evitar que o projeto comece maior do que precisa.
+              Essa recomendação considera o escopo declarado, a urgência e o risco de implementação para evitar que o projeto comece maior do que precisa.
             </p>
             <ResultHighlights :items="result.topHighlights" />
           </div>
@@ -55,8 +55,8 @@ const nextSteps = [
 
         <BaseCard>
           <div class="space-y-4">
-            <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700/80">Proximos passos</p>
-            <h2 class="text-2xl font-bold">Como transformar essa leitura em plano de execucao</h2>
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700/80">Próximos passos</p>
+            <h2 class="text-2xl font-bold">Como transformar essa leitura em plano de execução</h2>
             <ResultHighlights :items="nextSteps" />
           </div>
         </BaseCard>
@@ -65,10 +65,10 @@ const nextSteps = [
       <div class="rounded-[30px] border border-black/8 bg-white p-6 shadow-soft sm:p-8">
         <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div class="max-w-2xl space-y-3">
-            <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700/80">Acao recomendada</p>
-            <h2 class="text-2xl font-bold sm:text-3xl">Se fizer sentido, o proximo passo e validar prioridades e formato do MVP.</h2>
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700/80">Ação recomendada</p>
+            <h2 class="text-2xl font-bold sm:text-3xl">Se fizer sentido, o próximo passo é validar prioridades e formato do MVP.</h2>
             <p class="text-sm leading-7 text-black/65">
-              A conversa comercial ja pode partir desta base para discutir recorte inicial, fases e viabilidade real de implantacao.
+              A conversa comercial já pode partir desta base para discutir recorte inicial, fases e viabilidade real de implantação.
             </p>
           </div>
           <ResultActions :whatsapp-url="whatsappUrl" @click-whatsapp="trackWhatsappClick" />

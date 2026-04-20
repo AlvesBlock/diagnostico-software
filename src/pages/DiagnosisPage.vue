@@ -68,7 +68,7 @@ async function handleSubmit() {
   <DiagnosisLayout>
     <div class="space-y-6">
       <RouterLink to="/" class="inline-flex text-sm font-semibold text-black/60 hover:text-black">
-        Voltar para a pagina inicial
+        Voltar para a página inicial
       </RouterLink>
 
       <BaseCard class="space-y-8 bg-white/95">

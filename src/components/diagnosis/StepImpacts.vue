@@ -10,8 +10,9 @@ const store = useDiagnosisStore();
 <template>
   <div class="space-y-4">
     <p class="text-sm leading-6 text-black/58">
-      Selecione os impactos mais visiveis. Isso ajuda a deixar o diagnostico mais aderente ao peso real do problema.
+      Selecione os impactos mais visíveis. Isso ajuda a deixar o diagnóstico mais aderente ao peso real do problema.
     </p>
+
     <BaseCheckbox
       v-for="option in impactOptions"
       :key="option.value"
@@ -24,7 +25,7 @@ const store = useDiagnosisStore();
       v-if="store.answers.impacts.includes('other')"
       v-model="store.answers.impactsOther"
       label="Descreva outro impacto"
-      placeholder="Ex.: dificuldade para acompanhar produtividade"
+      placeholder="Ex.: dificuldade para acompanhar a produtividade"
     />
   </div>
 </template>

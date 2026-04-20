@@ -11,10 +11,10 @@ defineProps<{
 <template>
   <div class="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
     <div class="space-y-4">
-      <BaseTag>Diagnostico liberado</BaseTag>
+      <BaseTag>Diagnóstico liberado</BaseTag>
       <div class="space-y-3">
         <h1 class="max-w-4xl text-3xl font-extrabold leading-tight sm:text-5xl">
-          Seu cenario pede uma abordagem {{ getComplexityLabel(result.complexityLevel).toLowerCase() }} para {{ getPainCategoryLabel(result.painCategory).toLowerCase() }}.
+          Seu cenário pede uma abordagem {{ getComplexityLabel(result.complexityLevel).toLowerCase() }} para {{ getPainCategoryLabel(result.painCategory).toLowerCase() }}.
         </h1>
         <p class="max-w-3xl text-base leading-7 text-black/65">{{ result.summaryText }}</p>
       </div>

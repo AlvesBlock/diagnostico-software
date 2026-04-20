@@ -16,7 +16,7 @@ const emit = defineEmits<{
       <BaseButton>Continuar no WhatsApp</BaseButton>
     </a>
     <RouterLink to="/diagnostico">
-      <BaseButton variant="secondary">Refazer diagnostico</BaseButton>
+      <BaseButton variant="secondary">Refazer diagnóstico</BaseButton>
     </RouterLink>
   </div>
 </template>

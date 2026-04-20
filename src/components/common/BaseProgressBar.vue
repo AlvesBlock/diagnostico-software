@@ -8,8 +8,11 @@ defineProps<{
 
 <template>
   <div class="space-y-3">
-    <div v-if="currentStep && totalSteps" class="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.14em] text-black/40">
-      <span>Progresso do diagnostico</span>
+    <div
+      v-if="currentStep && totalSteps"
+      class="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.14em] text-black/40"
+    >
+      <span>Progresso do diagnóstico</span>
       <span>{{ currentStep }}/{{ totalSteps }}</span>
     </div>
     <div class="h-3 w-full rounded-full bg-black/8 p-0.5">

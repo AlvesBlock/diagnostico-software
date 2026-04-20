@@ -15,7 +15,7 @@ const store = useDiagnosisStore();
       :active="store.answers.currentScenario === option.value"
       :title="option.label"
       :description="option.description"
-      eyebrow="Cenario atual"
+      eyebrow="Cenário atual"
       @select="store.setCurrentScenario(option.value)"
     />
 

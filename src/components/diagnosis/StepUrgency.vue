@@ -14,7 +14,7 @@ const store = useDiagnosisStore();
       :active="store.answers.urgency === option.value"
       :title="option.label"
       :description="option.description"
-      eyebrow="Urgencia"
+      eyebrow="Urgência"
       @select="store.setUrgency(option.value)"
     />
   </div>

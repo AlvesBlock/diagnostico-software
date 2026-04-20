@@ -14,11 +14,11 @@ const emit = defineEmits<{
 <template>
   <button
     type="button"
-    class="group relative w-full overflow-hidden rounded-[26px] border p-5 text-left transition duration-200"
+    class="group relative w-full overflow-hidden rounded-[26px] border p-5 text-left transition duration-200 ease-out"
     :class="
       active
-        ? 'border-brand-500 bg-gradient-to-br from-brand-50 to-white shadow-soft'
-        : 'border-black/10 bg-white hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-soft'
+        ? 'scale-[1.01] border-brand-500 bg-gradient-to-br from-brand-50 to-white shadow-soft'
+        : 'border-black/10 bg-white/92 hover:-translate-y-0.5 hover:scale-[1.01] hover:border-brand-300 hover:shadow-soft'
     "
     @click="emit('select')"
   >
